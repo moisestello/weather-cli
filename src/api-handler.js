@@ -1,10 +1,10 @@
-const https = require('https');
+import https from 'https';
 
 /**
  * Class responsible of provide a mechanism for send signed request 
  * and return parsed responses.
  */
-class ApiHandler {
+export class ApiHandler {
     host;
     path;
 
@@ -45,5 +45,3 @@ class ApiHandler {
         });
     }
 }
-
-module.exports = ApiHandler;

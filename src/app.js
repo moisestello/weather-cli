@@ -1,11 +1,11 @@
-const ApiConfig = require('./config');
-const ApiHandler = require('./api-handler');
+import { ApiConfig } from './config';
+import { ApiHandler } from './api-handler';
 
 /**
  * Main CLI App execution
  */
-const App = () => {
-    api = new ApiHandler(ApiConfig);
+export const App = () => {
+    const api = new ApiHandler(ApiConfig);
 
     console.log("Fetching Dallas current weather...");
 
@@ -22,5 +22,3 @@ const App = () => {
         console.error(error);
     });
 }
-
-module.exports = App;
