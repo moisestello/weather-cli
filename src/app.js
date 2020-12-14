@@ -1,5 +1,5 @@
 import { ApiConfig } from './config';
-import { ApiHandler } from './api-handler';
+import { ApiHandler } from './utils/api-handler';
 
 /**
  * Main CLI App execution
