@@ -716,6 +716,18 @@ core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
+csv-parser@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/csv-parser/-/csv-parser-3.0.0.tgz#b88a6256d79e090a97a1b56451f9327b01d710e7"
+  integrity sha512-s6OYSXAK3IdKqYO33y09jhypG/bSDHPuyCme/IdEHfWpLf/jKcpitVFyOC6UemgGk8v7Q5u2XE0vvwmanxhGlQ==
+  dependencies:
+    minimist "^1.2.0"
+
+csv-writer@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/csv-writer/-/csv-writer-1.6.0.tgz#d0cea44b6b4d7d3baa2ecc6f3f7209233514bcf9"
+  integrity sha512-NOx7YDFWEsM/fTRAJjRpPp8t+MKRVvniAg9wQlUKx20MFrPs73WLJhFf5iteqrxNYnsy924K3Iroh3yNHeYd2g==
+
 debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -727,11 +739,6 @@ decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
-
-deeks@2.2.7:
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/deeks/-/deeks-2.2.7.tgz#91e711cdd434e0f12ddc194836569e2a3db383ad"
-  integrity sha512-pCKFxSqyY2LAQ3qKQ+y+wOG63Bb9uDmDiHUVnrTR10AP75BVo2QMlgm36G+oPpRDPrgAiw5p9d+lAxdsqOwOyA==
 
 define-property@^0.2.5:
   version "0.2.5"
@@ -761,11 +768,6 @@ detect-indent@^4.0.0:
   integrity sha1-920GQ1LN9Docts5hnE7jqUdd4gg=
   dependencies:
     repeating "^2.0.0"
-
-doc-path@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/doc-path/-/doc-path-2.2.0.tgz#dc887085400eece86cb4c761966ca7c54474a246"
-  integrity sha512-l8velk3nDv2gaV4rnqpRzdKHKcL4gSFlvaqKCDH9uAmbNiOVnTSUuaVcho1PDw5Cq9MfgSwzIDAAv9j8WDB1pg==
 
 escape-string-regexp@^1.0.2:
   version "1.0.5"
@@ -1193,14 +1195,6 @@ jsesc@~0.5.0:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
 
-json-2-csv@^3.8.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/json-2-csv/-/json-2-csv-3.8.0.tgz#85c6c423c6a93c081c007e4bb332cd08e2c0a309"
-  integrity sha512-csSHgPH15n69yDitVPCeipIVt4fZ65d84qEp0vwOZ8z5EAfidV6BmNz9cCVmKuN6O2sELKt4DBMAvdANJKJ1Fg==
-  dependencies:
-    deeks "2.2.7"
-    doc-path "2.2.0"
-
 json5@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
@@ -1304,7 +1298,7 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@^1.2.5:
+minimist@^1.2.0, minimist@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==

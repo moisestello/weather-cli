@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/moisestello/weather-cli#readme",
   "dependencies": {
-    "json-2-csv": "^3.8.0"
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
