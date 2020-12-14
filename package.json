@@ -1,0 +1,25 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "Weather CLI",
+  "main": "bin/index.js",
+  "bin": {
+    "weather": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moisestello/weather-cli.git"
+  },
+  "author": "Gabriel M Tello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moisestello/weather-cli/issues"
+  },
+  "homepage": "https://github.com/moisestello/weather-cli#readme",
+  "dependencies": {
+    "json-2-csv": "^3.8.0"
+  }
+}
